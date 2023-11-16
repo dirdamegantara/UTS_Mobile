@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.about.AboutFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_aboutheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="APLIKASI INI DIBUAT OLEH"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fotodirda"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/dirda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_aboutheader"
+        android:layout_margin="64dp"/>
+
+    <TextView
+        android:id="@+id/text_dirda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DIRDA MEGANTARA\nF55122026"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/fotodirda"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/fotomelvin"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/melvin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_dirda"
+        android:layout_margin="32dp"/>
+
+    <TextView
+        android:id="@+id/text_melvin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MELVIN OKTAVIANUS HALAWA\nF55122035"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/fotomelvin"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/fotorizky"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/rizky"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_melvin"
+        android:layout_margin="32dp"/>
+
+    <TextView
+        android:id="@+id/text_rizky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RIZKY ARDIANSYAH\nF55122012"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/fotorizky"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/text_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="E-Ticket App\n pre-Alpha 1.0.0\n\n©Copyright Kelompok 5"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/text_rizky"
+        android:layout_margin="64dp"/>
+
+        <View
+            android:id="@+id/placeholder_view"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/text_version"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
